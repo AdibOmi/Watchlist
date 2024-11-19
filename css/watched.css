@@ -43,6 +43,24 @@
 
   #movieList li{
     padding: 8px 0px;
-
+    cursor: pointer;
+    /* space for cross button */
+    padding-right: 30px;
   }
+
+  #movieList li .remove-btn{
+      position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#movieList li:hover .remove-btn {
+    display: inline;
+}
 

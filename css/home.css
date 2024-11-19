@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(189, 235, 255);
+}
+
 
 .navbar{
     background-color: skyblue;

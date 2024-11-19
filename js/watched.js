@@ -36,5 +36,19 @@ document.querySelector('#add').addEventListener('click', function(){
         alert("Enter a movie or tv show name");
 });
 
-    //add a remove button later
+
+
+
+
+    //removing movies not working
+    movieList.addEventListener('click'), function(event){
+        if(event.target.tagName === 'LI'){
+            const movieToRemove = event.target.textContent;
+            event.target.remove();
+
+            storedMovies = storedMovies.filter(movie => movie !== movieToRemove);
+            localStorage.setItem('movieList', JSON.stringify(storedMovies));
+        }
+    }
+
 });
